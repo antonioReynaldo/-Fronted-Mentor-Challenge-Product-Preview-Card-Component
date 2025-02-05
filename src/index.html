@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product Preview Card Component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=shopping_cart" />
+
+
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <link rel="stylesheet" href="./css/stylesFinals.css">
+</head>
+
+<body
+  class="bg-cream py-[25px] px-[15px] min-h-full box-border desktop:flex desktop:justify-center desktop:items-center desktop:min-h-screen">
+
+  <div
+    class="bg-white flex flex-col gap-y-[20px] justify-center desktop:w-[550px] desktop:h-[400px] desktop:flex-row rounded-[10px]">
+    <div class="desktop:w-1/2">
+      <img src="./assets/images/image-product-mobile.jpg" alt="Product Image"
+        class="w-full h-auto object-cover desktop:hidden rounded-t-[10px]" />
+
+      <img src="./assets/images/image-product-desktop.jpg" alt="Product Image"
+        class="w-full h-full object-cover hidden desktop:block desktop:rounded-tl-[10px] desktop:rounded-bl-[10px]" />
+    </div>
+
+    <div
+      class="px-[20px] rounded-b-[10px] desktop:w-1/2 desktop:flex desktop:flex-col desktop:justify-around desktop:p-[25px]">
+      <p
+        class="uppercase font-montserrat text-darkGrayishBlue tracking-[3px] text-sm mb-[10px] font-medium desktop:mb-0">
+        Perfume</p>
+      <h1 class="font-fraunces text-veryDarkBlue text-[32px] font-bold leading-none mb-[15px] desktop:mb-0">
+        Gabrielle Essence Eau De
+        Parfum</h1>
+      <p class="text-darkGrayishBlue text-[14px] mb-[20px] leading-relaxed desktop:mb-0">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL
+      </p>
+      <div class="flex gap-[20px] items-center mb-[10px] desktop:mb-0">
+        <p class="text-darkCyan font-fraunces text-[32px] font-bold">$149.99</p>
+        <p class="text-darkGrayishBlue line-through text-sm">$169.99</p>
+      </div>
+      <button
+        class="bg-darkCyan flex justify-center gap-[10px] py-[10px] w-full text-white font-montserrat font-bold rounded-lg mb-[25px] hover:bg-hover desktop:mb-0"
+        aria-label="Add to cart">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+        </svg>
+        Add to Cart
+      </button>
+    </div>
+  </div>
+
+</body>
+
+</html>
